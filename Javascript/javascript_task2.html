@@ -25,24 +25,30 @@ var aqiData = [
 ];
 
 (function () {
-	var arr = ['一','二','三','四','五','六']
-
-	aqiData.sort(function(a,b)) {
-		return b[1]-a[1];
-	}
-
-	for(var i = 0; i < aqiData.length;i++){
-		if(aqiData[i][1] > 60) {
-			var listItem = docuemnt.createElement("li")
-      list.appendChild(listItem);
-		}
-	}
-
+  var data = document.getElementById('aqiData');
+  if data > 60,
+    document.write="aqi-list.name"}
   /*
+  var arr = ['一'，'二'，'三'，''四]
+  var list = document.getElementById("aqi-list");
+
+  aqiData.sort(function(a,b)) {
+      return b[1] - a[1];
+  }
+  
+  for(var i = 0; i < aqiData.length; i++) {
+    var choice = aqiData[i];
+    if(choice[1] > 60) {
+      var listItem = document.createElement("li");
+      listItem.innerHTML = "第" + arr[i] + '名' + choice;
+      list.appendChild(listItem);
+    }
+  }
   在注释下方编写代码
   遍历读取aqiData中各个城市的数据
   将空气质量指数大于60的城市显示到aqi-list的列表中
   */
+  
 
 })();
 

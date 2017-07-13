@@ -15,7 +15,12 @@
 
 (function() {
 
-	var b
+	var butt = document.getElementById('button');
+  var inco = document.getElementById('aqi-input');
+  var cont = document.getElementById('aqi-display');
+  butt.onclick = function(){
+    cont.innerHTML = inco.value;
+  };
   /*    
   在注释下方写下代码
   给按钮button绑定一个点击事件
